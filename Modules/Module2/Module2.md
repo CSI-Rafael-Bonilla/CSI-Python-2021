@@ -131,27 +131,27 @@ Typing `python` *(or `python3`)* into the terminal will enter the Python console
 What is a benefit of using Markdown?
 https://www.markdownguide.org/getting-started/
 
- - Answer:
+ - Answer: 
 
 What does "cd" stand for?
 
- - Answer:
+ - Answer: cd stands for change directory.
 
 Did you get stuck at any point or become confused with your console? (yes/no) If so, what happened? How did you solve it?
 
- - Answer:
+ - Answer: Yes, because it didn't want to print Hello "name" in the terminal so I tried many different ways and figured out that I had to change terminal into python3 instead of python.
 
 Did you consider searching google for other commands to run? What did you try? 
 
- - Answer:
+ - Answer: No, but I did find my way around the problem of dir because I was in mac and instead of dir it is lr.
 
 What would you like to program? 
 
- - Answer:
+ - Answer: I would like to program video games and maybe even program for engineering
 
 Type down any class notes below this sentence:
 
-
+dir=lc and typing cd .. brings you back to the page you were at.
 
 Lackluster responses may result in point deductions.
 -->
