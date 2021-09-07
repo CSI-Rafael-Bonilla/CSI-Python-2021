@@ -96,24 +96,24 @@ print(type(age))
 
 What is the difference between "42" and 42.
 
- - Answer:
+ - Answer: The difference between "42" and 42 is that "42" is in a string while 42 is 
 
 Define the boolean operators: >, <, ==, >=, <=
 
- - Answer:
+ - Answer: The boolean operators mean different things, for example the symbol > means that it is greater than, the symbol < means that it is less than, the symbol == is that it is equal to, the symbol >= means greater than or equal than, and the symbol <= means less than or equal than.
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
 
- - Answer:
+ - Answer:db = arr[4] 
 
 What is the first index of a list? Why?
 
- - Answer:
+ - Answer: The first index of a list is 0.
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer:
+ - Answer: An example of a null value is like a microwave with food inside would be the integer and then a microwave with a plate but without food would be 0 and a microwave without a plate would be null and finally the shelf without the microwave would be the undefined. 
 
 Type down any class notes below this sentence:
 
