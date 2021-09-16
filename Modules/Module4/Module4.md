@@ -17,7 +17,7 @@ In Python, the `input()` takes a string value typed by the user at the end of th
 
 <br>
 
-### *[The best way to learn about a language is always to read the documentation! These are the built in functions for python.](https://docs.python.org/3/library/functions.html)*
+### *[The best way to learn about a language is always to raed the documentation! These are the built in functions for python.](https://docs.python.org/3/library/functions.html)*
 
 For now we will use simple I/O (Input/Output) functions
 
@@ -66,7 +66,7 @@ greetStudent(name)
 <br>
 
 ## Concatenation
-The "`+`" operator doesn't just add 2 numbers, it can also "add" two strings.  Combining two strings is called *concatenation*. Be carefull when using concatenation as the operator may **add** numeric variables that are not defined as strings. All operands must be of type `string` for a concatenation.
+The "`+`" operator doesn't just add 2 numbers, it can also "add" two strings.  Combining two strings is called *concatenation*. Be carefull when using concatenation as the operator may **add** numeric variables that are not defined as strings.
 
 <br>
 
@@ -76,10 +76,10 @@ A Functional String accepts variables or <u>code blocks</u> `{}` into the constr
 
 A functional string is denoted by an "f" before the string initialization. eg.
 ```python
-var:str = "regular string"
+var:str = "representing a value"
 myNumber:float = 3.5
 
-myFunctionalString = f"Combine an existing {var} with a number such as: {myNumber} or execute something like {round(3.4 * 1.1)}"
+myFunctionalString = f"Combine an existing string {var} with a number such as: {myNumber} or {1}"
 
 print(myFunctionalString)
 
@@ -135,21 +135,27 @@ Evaluate the following code. Is the code written correctly? What would be the co
         print('This message has a syntax error!")
         print(Churrigueresco)
 
- - Answer:
+ - Answer: The code "print(Churrigueresco)" and "print('This message has a syntax error!") are wrong because the within the it does not have the '', it suppose to be: print('Churrigueresco') and print('This message has a syntax error!')
 
 Evaluate the following code. Is the code written correctly? What would be the correct code?
         someNumber=360
         print(' The Number is someNumber ')
 Expected:  The Number is 360
 
- - Answer:
+ - Answer: The code is wrong because he did not put the quotation marks in the variable and in the print it is wrong because it will just say "The Numer is someNumber". This is how I did it:
+ 
+ someNumber = "360"
+ print('The Number is '+someNumber)
 
 Define a function that takes 2 or more string parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
- - Answer:
+ - Answer: 
+ Grams = 21
+ Or = 35.7
+ Cat = f"The cat ate between {Grams} or {Or} grams."
+ print(Cat)
+ The cat ate between 21 or 35.7 grams.
   
-
-
 Refer to this documentation webpage and google for the exercises below:
 https://www.w3schools.com/python/python_ref_string.asp
 
@@ -159,7 +165,7 @@ Which code returns the length of the string s0:
 
 s0 = "What is my length? Store it as a number in a variable."
 
- - Answer:
+ - Answer: You find the length of a string using __sizeof__(). The code that returns the length of the string s0 is s0.__sizeof__() .
 
 How do you create a substring in python?
 Create a substring of s1 containing only my name. Store it in a variable called ss1.
@@ -167,11 +173,15 @@ https://www.freecodecamp.org/news/how-to-substring-a-string-in-python/
 
 s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
 
- - Answer: ss1 =
+ - Answer: 
+        def ss1():
+	print(s1[25:45])
 
 Capitalize every letter of ss1 using a function. Store it in a variable called SS1.
 
- - Answer: SS1 =
+ - Answer: 
+ cap = ss1
+ SS1 = cap.swapcase()
 
 
 This last section is not worth any points, but is worth looking into. It is good string manipulation practice and contains exercises that you may see in a pop quiz! 
