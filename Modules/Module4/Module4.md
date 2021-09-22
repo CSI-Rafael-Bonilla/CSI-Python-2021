@@ -145,7 +145,7 @@ Expected:  The Number is 360
  - Answer: The code is wrong because he did not put the quotation marks in the variable and in the print it is wrong because it will just say "The Numer is someNumber". This is how I did it:
  
  someNumber = "360"
- print('The Number is '+someNumber)
+ print('The Number is '+ str(someNumber))
 
 Define a function that takes 2 or more string parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
@@ -165,7 +165,7 @@ Which code returns the length of the string s0:
 
 s0 = "What is my length? Store it as a number in a variable."
 
- - Answer: You find the length of a string using __sizeof__(). The code that returns the length of the string s0 is s0.__sizeof__() .
+ - Answer: You find the length of a string using len(s0). The code that returns the length of the string s0 is len(s0).
 
 How do you create a substring in python?
 Create a substring of s1 containing only my name. Store it in a variable called ss1.
