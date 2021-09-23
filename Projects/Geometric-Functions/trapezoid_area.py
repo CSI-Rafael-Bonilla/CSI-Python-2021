@@ -12,7 +12,7 @@ def printTrapezoidScientific(area:float, unit:str):
 # Add a header to your execution. It includes 2 newline characters '\n'
 print("\nCalculating various areas: \n")
 
-printTrapezoidScientific(area(100, 60.0), "m^2")
-printTrapezoidScientific(area(55.5, 1), "m^2")
-printTrapezoidScientific(area(1.27E4, 290), "m^2")
-printTrapezoidScientific(area(1.27E-8, 0.001), "m^2")
+printTrapezoidScientific(area(0.1001100, 0.101111), "m^2")
+printTrapezoidScientific(area(0.1101100, 0.0100000), "m^2")
+printTrapezoidScientific(area(0.1101110, 0.1101111), "m^2")
+printTrapezoidScientific(area(0.1101111, 0.1100010), "m^2")
