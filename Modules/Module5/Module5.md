@@ -73,18 +73,18 @@ Give a python example for each logic operator in the module image.
  - Answers:
    - OR:
     x = 34
-    if(x >= 21 or x < 69)
+    if(x >= 21 or x < 69):
     This is true because no matter if one is right then the whole thing is true, but if I do this: 
-    "if(x >=21 or x >= 69)" then it is still true because even though 34 is not greater nor equal to 69 the first bit is true still true and the code will identifing it and deeming the whole code true because it o ely chose the first bit. 
+    "if(x >=21 or x >= 69):" then it is still true because even though 34 is not greater nor equal to 69 the first bit is true still true and the code will identifing it and deeming the whole code true because it o ely chose the first bit. 
    - AND: 
    x = 34
-    if(x >= 21 and x < 69)
+    if(x >= 21 and x < 69):
     This is true because if both are right then the whole thing is true, but if I do this: 
-    "if(x >=21 and x >= 69)" then the whole thing is false because 34 is not greater nor equal to 69 so even though the first bit is true the rest is false deeming this line of code false.
+    "if(x >=21 and x >= 69):" then the whole thing is false because 34 is not greater nor equal to 69 so even though the first bit is true the rest is false deeming this line of code false.
    - NOT: 
-   if(x >= 21 and (not x >= 69))
+   if(x >= 21 and (not x >= 69)):
     This is true because if both are right then the whole thing is true, but if I do this: 
-    "if(x >=21 and (not x < 69)" then the whole thing is false because of the not 34 is not lesser than 69 so even though the first bit is true the rest is false deeming this line of code false.
+    "if(x >=21 and (not x < 69)):" then the whole thing is false because of the not 34 is not lesser than 69 so even though the first bit is true the rest is false deeming this line of code false.
 
 
 Type down any class notes below this sentence:
