@@ -8,3 +8,11 @@ class ExperimentalData:
         self.BuildingHeight = Buildingheight_m
         self.gravityms = gravityms
 
+        Gun = "DT MDR 7.62x51"
+        Calliber = "7.62x51mm NATO"
+        Bullet = "7.62x51mm Ultra Nosler"
+        Velocityms = 18.27
+        Building = "Ocean Tower"
+        Buildingheight_m = 74.07
+        gravityms = 9.81
+
