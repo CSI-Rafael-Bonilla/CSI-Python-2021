@@ -36,6 +36,15 @@ Velocity = (Buildingkm / Time)
 
 delta_x =  (Velocity / Time)
 
+
+# Gun = "DT MDR 7.62x51"
+# Calliber = "7.62x51mm NATO"
+# Bullet = "7.62x51mm Ultra Nosler"
+# Velocityms = 18.27
+# Building = "Ocean Tower"
+# Buildingheight_m = 74.07
+# gravityms = 9.81
+
 print(f"In the experiment we shot a gun from a building to see it's speed from the top of the building to the floor. The gun we used was the {AssaultRifle} and its caliber was {Caliber} with the bullet {Bullet} and we shot it from the building {Building}.")
 print(Velocity)
 myDataSet = [
