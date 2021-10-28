@@ -5,33 +5,37 @@ class ExperimentalData:
         self.Gun = Gun
         self.Calliber = Calliber
         self.Bullet = Bullet
-        self.Velocityms = Velocityms
+        self.BulletVelocityms = BulletVelocityms
         self.Building = Building
         self.BuildingHeight = Buildingheight_m
-        self.planet = planets
-        self.g_ms2 = g_ms2
+        self.planet = planet
+        
 
-#Parallel List
-planets = "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
-g_ms2 = [3.7, 8.87, 9.81, 3.711, 24.79, 10.44, 8.69, 11.15]
 
-# Planet Index
-planet = planets.index(input("Planet Name: "))
+#To calculate time we will define "getTime" so we can get it
 
-# Planet Gravity
-g_ms2[planet]
+def getTime(self):
+    return (math.sqrt(2 * self.Buildingheight_m / self.getGravity()))
 
-def getTime (self):
-    return (math.sqrt((int(ExperimentalData.Building_m) * 2) / int(ExperimentalData.planet)))
 
-#Parallel List
-planets = "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
-g_ms2 = [3.7, 8.87, 9.81, 3.711, 24.79, 10.44, 8.69, 11.15]
+#To calculate time we will define "getDistance" so we can get it
 
-# Planet Index
-planet = planets.index(input("Planet Name: "))
+def getDistance(self):
+    return (self.BulletVelocityms * self.getTime())
 
-# Planet Gravity
-g_ms2[planet]
 
+#To calculate time we will define "getDistance" so we can get it
+
+def getGravity(self):
+    planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+    g_ms2 = [3.7, 8.87, 9.81, 3.711, 24.79, 10.44, 8.69, 11.15]
+    return g_ms2[planets.index(self.planet)]
+    
+
+#In the "toString" function we will describe the outcome of the experiment
+
+def toString(self):
+    print(f"""I shot a {self.Gun} with a calliber of {self.Calliber} from {self.Building}, it's height was {self.BuildingHeight}. What we 
+    needed to do is measure the time and distance that the bullet traveled, and to how it would be in other planets like {self.planet}. 
+    The Bullet that we will be using will be {self.Bullet} which will be going at a velocity of {self.BulletVelocity}. """)
 
