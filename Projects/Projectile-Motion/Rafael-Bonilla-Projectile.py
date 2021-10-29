@@ -38,11 +38,11 @@ from pathlib import Path
 
 # List of the guns
 myDataSet = [
-    ExperimentalData(f"DT MDR 7.62x51", "7.62x51mm NATO", "7.62x51mm Ultra Nosler", 822, "Ocean Tower", 74.07, 9.81),
-    ExperimentalData(f"Mk47", "7.62x39mm", "7.62x39mm PS gzh", 700, "Golden Eagle Tiando Tower A", 368.1, 9.81),
-    ExperimentalData(f"TX-15 DML", "5.56x45mm NATO", "5.56x45mm M855", 922, "Zifeng Tower", 450, 9.81),
-    ExperimentalData(f"MP-5K", "9x19mm Parabellum", "9x19mm Pst gzh", 457, "OKO - Residencial Tower", 354.2, 9.81),
-    ExperimentalData(f"FN GL40", "40x46 mm", "40x46mm M381(HE) grenade", 76, "30 Hudson Yards", 387.1, 9.81),
+    ExperimentalData(f"DT MDR 7.62x51", "7.62x51mm NATO", "7.62x51mm Ultra Nosler", 822, "Ocean Tower", 74.07, "Earth"),
+    ExperimentalData(f"Mk47", "7.62x39mm", "7.62x39mm PS gzh", 700, "Golden Eagle Tiando Tower A", 368.1, "Neptune"),
+    ExperimentalData(f"TX-15 DML", "5.56x45mm NATO", "5.56x45mm M855", 922, "Zifeng Tower", 450, "Saturn"),
+    ExperimentalData(f"MP-5K", "9x19mm Parabellum", "9x19mm Pst gzh", 457, "OKO - Residencial Tower", 354.2, "Jupiter"),
+    ExperimentalData(f"FN GL40", "40x46 mm", "40x46mm M381(HE) grenade", 76, "30 Hudson Yards", 387.1, "Mars"),
     ]
 
 #ProjectileFunction(myDataSet[1])
@@ -54,7 +54,7 @@ myDataSet = [
 myOutputPath = Path(__file__).parents[0]
 myOutputFilePath = os.path.join(myOutputPath,'Experiment.json')
 with open(myOutputFilePath,'w') as outlfile:
-    json.dump((data.__dict__ for data in myDataSet), outlfile)
+    json.dump([data.__dict__ for data in myDataSet], outlfile)
 
 # Deserrialization
 # Opening the JSON file
@@ -66,4 +66,4 @@ experimentjson = json.load(deserialize)
 #   experiment(ExperimentalData(**e))
 
 for e in experimentjson:
-    ExperimentalData(**e).toString()
+        ExperimentalData(**e).toString()
