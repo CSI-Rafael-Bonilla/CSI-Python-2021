@@ -48,23 +48,32 @@ myObject = ExperimentData(**experimentJson)
 
 What does JSON Stand for?
 
- - Answer:
+ - Answer: JavaScript Object Notation.
 
 Why are JSON formats important?
 
- - Answer:
+ - Answer: Json is important because it is a form to convert objects to string.
 
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
- - Answer:
+ - Answer: 
+ class Sailboat:
+    def __init__(self, Hull:str, Helm:str, Deck:str, Sail:str, Mast:str, Boom:str, Rudder:int):
+            self.Hull = Hull
+            self.Helm = Helm
+            self.Sail = Sail
+            self.Deck = Deck
+            self.Mast = Mast
+            self.Boom = Boom
+            self.Rudder = Rudder
 
 What is the difference between serialization and deserialization?
 
- - Answer:
+ - Answer: Serialization is when an object is turned into a string and deserialization is when the string is turned into the object.
 
 Research data persistance. What did you find?
 
- - Answer: 
+ - Answer: I found that data persistance is when an in-memory object is in a state that jumps between saving it and storing it into converted data.
 
 Type down any class notes below this sentence:
 
