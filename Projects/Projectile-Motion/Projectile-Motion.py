@@ -1,6 +1,6 @@
 import json
 import os
-from experimentalData import ExperimentalData
+from ExperimentalData import ExperimentalData
 from pathlib import Path
 
 #Buildingkm = 74.07
@@ -52,7 +52,7 @@ myDataSet = [
 #     json.dump(myDataSet[1].__dict__, outfile)
 
 myOutputPath = Path(__file__).parents[0]
-myOutputFilePath = os.path.join(myOutputPath,'Experiment.json')
+myOutputFilePath = os.path.join(myOutputPath,'Projectile-Motion.json')
 with open(myOutputFilePath,'w') as outlfile:
     json.dump([data.__dict__ for data in myDataSet], outlfile)
 
@@ -60,10 +60,10 @@ with open(myOutputFilePath,'w') as outlfile:
 # Opening the JSON file
 
 deserialize = open(myOutputFilePath) 
-experimentjson = json.load(deserialize)
+ProjectileMotionjson = json.load(deserialize)
 
 #for e in experimentjson: 
 #   experiment(ExperimentalData(**e))
 
-for e in experimentjson:
+for e in ProjectileMotionjson:
         ExperimentalData(**e).toString()
