@@ -70,23 +70,23 @@ print('Loop ended.')
 
 What is an Iterator?
 
- - Answer:
+ - Answer: The repetition of a sequence of computer instructions a specified number of times or until a condition is met.
 
 Why are iterators important im programming?
 
- - Answer:
+ - Answer: Iterators are important because it allows the user to process every element of a code while containing the user from the internal structure of the code.
 
 What is the purpose of a for-loop.
 
- - Answer:
+ - Answer: The purpose of a for-loop is that it runs lines of code until the loop has iterated over every item in an iterable.
 
 Describe how the modulus operand allows us to determine when a number is odd. Provide a mathematical example.
 
- - Answer: 
+ - Answer: The modulus operand allows us to determine when a number is odd when the number is divided by 2 and there is a remainder of 1 left. 3/2 = 1 with a reminder of 1.
 
 How do you create an infinite loop in python?
 
- - Answer:
+ - Answer: One created an infinite loop by making a while loop that will go indefinently.
 
 Type down any class notes below this sentence:
 
