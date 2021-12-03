@@ -18,13 +18,13 @@ class ExperimentalData:
         return (math.sqrt(2 * self.Buildingheight_m / self.getGravity()))
 
 
-#To calculate time we will define "getDistance" so we can get it
+#To calculate distance we will define "getDistance" so we can get it
 
     def getDistance(self):
         return (self.BulletVelocityms * self.getTime())
 
 
-#To calculate time we will define "getDistance" so we can get it
+#To calculate gravity we will define "getGraviry" so we can get it
 
     def getGravity(self):
         planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
