@@ -47,7 +47,7 @@ myDataSet = [
 
 #ProjectileFunction(myDataSet[1])
 
-# Seraalization
+# Seralization
 # with open (myOutputPath, 'w') as outfile:
 #     json.dump(myDataSet[1].__dict__, outfile)
 
