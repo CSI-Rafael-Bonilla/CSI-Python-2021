@@ -20,14 +20,14 @@ directory = "responses"
 # Parent Directory path
 parent_dir = Path(__file__).parents[0]
   
-# Path
+# Create the folder Path 
 folderPath = os.path.join(parent_dir, directory)
 
 os.mkdir(folderPath)
 print("Directory '% s' created" % directory)
   
 
-# loop 100
+# loop only 100 times
 
 for e in range(100):
 
@@ -37,15 +37,15 @@ for e in range(100):
 
     # Loop over JSON items and Deserialize them into python objects
     for r in requestData:  
-        #   Deserialize 
+        #   Deserialize the color
         color:Color = Color(**r)
         # Add object to list
         colors.append(color) 
-        # Print id
+        # Print the color id
         print(color.id)
 
-        # Path
+        # Make the Path
         filePath = os.path.join(folderPath, f"{color.uid}.json")
-        
+        #Save the file
         with open(filePath,'w') as outlfile:
             json.dump(color.__dict__, outlfile)
