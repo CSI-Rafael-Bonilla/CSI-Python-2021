@@ -47,5 +47,5 @@ for e in range(100):
         # Path
         filePath = os.path.join(folderPath, f"{color.uid}.json")
         
-        with open(response,'w') as outlfile:
-    json.dump(Color, outlfile)
+        with open(filePath,'w') as outlfile:
+            json.dump(color.__dict__, outlfile)
