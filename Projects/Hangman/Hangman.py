@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import json, ssl
 from pathlib import Path
 import os
@@ -94,5 +95,21 @@ steps = ["""
     |
     |
     \__________________"""]
+print(steps[0])
+
+
 
 print (len(color.color_name)* " _")
+
+
+
+def input_function():
+    while(True):
+        letter = input("Choose letters to guess a word related to a color")
+
+        if(len(letter)!= 1):
+            print("ERROR, input a letter")
+            continue
+        if (letter.isdigit()):
+            print("ERROR, input a letter")
+            continue
