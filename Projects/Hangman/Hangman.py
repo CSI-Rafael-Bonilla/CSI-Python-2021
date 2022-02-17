@@ -108,8 +108,11 @@ def input_function():
         letter = input("Choose letters to guess a word related to a color")
 
         if(len(letter)!= 1):
-            print("ERROR, input a letter")
+            print("ERROR input a letter, no more than one character")
             continue
         if (letter.isdigit()):
-            print("ERROR, input a letter")
+            print("ERROR input a letter, not a digit")
+            continue
+        if  (letter.isalnum()):
+            print("ERROR input a letter, not a special character")
             continue
