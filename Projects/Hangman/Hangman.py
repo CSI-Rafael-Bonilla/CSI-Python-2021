@@ -1,3 +1,4 @@
+from ast import operator
 from asyncio.windows_events import NULL
 import json, ssl
 from socket import if_indextoname
@@ -147,4 +148,4 @@ def printword ():
 
 def stepcounter():
     while(True):
-        if (len(my_List.append))          
+        if (len(my_List.append))
