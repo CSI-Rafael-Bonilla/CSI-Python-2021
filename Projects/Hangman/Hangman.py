@@ -147,4 +147,4 @@ def printword ():
 
 def stepcounter():
     while(True):
-        if my_List.append          
+        if (len(my_List.append))          
