@@ -1,10 +1,4 @@
-from ast import operator
-from asyncio.windows_events import NULL
 import json, ssl
-from socket import if_indextoname
-from pathlib import Path
-import os
-from urllib import response
 import urllib.request
 from Color import Color
 
@@ -101,7 +95,7 @@ steps = ["""
     \__________________"""]
 print(steps[0])
 
-
+print (color.color_name)
 
 print (len(color.color_name)* " _")
 
@@ -110,8 +104,6 @@ def input_function():
         letter = input("Choose letters to guess a word related to a color")
 
         special_characters = "!@#$%^&*()-+?_=,<>/"
-        s=input()
-
         
 
         if(len(letter)!= 1):
@@ -134,18 +126,29 @@ print(input_function())
 
 def printword ():
     Temp:str=""
-    
+    int = 0 
     for letter in color.color_name:
-        if letter in color.color_name:
+        if letter in my_List.append:
             Temp+= letter
         else: 
             Temp+="_"
     print (Temp)
 
+for letter in my_List:
+    if (letter not in color.color_name):
+        
+
+
+
+while (True):
+    input_function()
+    #print steps()
+
 #while (True):
     #print (steps[0])
     #get input
 
-def stepcounter():
-    while(True):
-        if (len(my_List.append))
+#def stepcounter():
+#    while(True):
+#        if (len(my_List.append))
+
