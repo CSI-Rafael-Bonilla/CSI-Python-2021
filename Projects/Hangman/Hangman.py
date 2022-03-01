@@ -154,6 +154,7 @@ def getErrors():
 # After the player answers the first letter, the game restarts the function that validates the letters, the one that prints the words, and if the steps are the same as the amount of errors
 while (True):
     input_function()
+    printword()
     print (steps[getErrors()]) 
         
     if my_List == 7:
