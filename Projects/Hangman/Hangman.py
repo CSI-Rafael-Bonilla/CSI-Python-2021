@@ -139,6 +139,9 @@ def printword (color):
             Temp+= letter
         else: 
             Temp+="_"
+        if Temp == color:
+            print("CONGRATS, NOW YOU ARE A COLOR CONNOISSEUR!!!")
+            break
     print (Temp)
 
 def getErrors(color):
@@ -158,13 +161,13 @@ while (True):
     # error = getErrors(color)
     while (True):
         error = getErrors(color)
-        
         print (steps[error])
         printword(color)
        
 
         if error == 6:
             print("GAME OVER, you absolute buffoon the word was")
+            my_List = [""]
             print (color)
             print("-------------------------------------------")
             break
