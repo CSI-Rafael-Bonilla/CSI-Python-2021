@@ -16,7 +16,9 @@ pygame.display.set_caption('Snake game by Edureka')
 game_over=False
 while not game_over:
     for event in pygame.event.get():
-        print(event)   
+#When the X is pressed on the tab of the game, the code is terminated.
+        if event.type==pygame.QUIT:
+            game_over=True
  
 #Used to uninitialize everything
 pygame.quit()
