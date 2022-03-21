@@ -8,15 +8,17 @@ pygame.init()
 #Updates the display
 #pygame.display.update()
 
-#black, red, white, and are in the parameter "0, 0, 0", "255,0,0", "255, 255, 255", and "0,0,225" respectively
+#black, red, yellow, white, green, and blue are in the parameter "0, 0, 0", "213,50,80", "255, 255, 102" ,"255, 255, 255", "0, 255, 0", and "50,153,213" respectively
 black=(0,0,0)
-red=(255,0,0)
+red=(213,50,80)
+yellow = (255, 255, 102)
 white = (255, 255, 255)
-blue = (0,0,225)
+green = (0, 255, 0)
+blue = (50,153,213)
 
 #Sets the display paramaters
-dis_width = 800
-dis_height = 600
+dis_width = 600
+dis_height = 400
 dis=pygame.display.set_mode((dis_width,dis_height))
 
 #Names the display after the set caption
@@ -27,15 +29,20 @@ clock = pygame.time.Clock()
 
 snake_block = 10
 #It is the snake's speed
-snake_speed = 30
+snake_speed = 15
 
-#Establishes the font
-font_style = pygame.font.SysFont(None, 30)
+#Establishes the fonts used in the game
+font_style = pygame.font.SysFont("bahnschrift", 25)
+score_font = pygame.font.SysFont("comicsansms", 35)
+
+def our_snake(snake_block, snake_list):
+    for x in snake_list:
+        pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
 
 #It establishes the font of the message
 def message(msg,color):
     mesg = font_style.render(msg, True, color)
-    dis.blit(mesg, [dis_width/3, dis_height/3])
+    dis.blit(mesg, [dis_width/6, dis_height/3])
 
 #It makes it when game_over is false it prints out all the actions that take place on the screen. 
 def gameLoop():
@@ -49,6 +56,9 @@ def gameLoop():
 #The change made in x and y
     x1_change = 0       
     y1_change = 0
+
+    snake_List = []
+    Length_of_snake=1
 
     foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
@@ -105,24 +115,41 @@ def gameLoop():
         x1 += x1_change
         #When x1 is increased, x1_change is increased
         y1 += y1_change
-        dis.fill(white)
+        dis.fill(blue)
 
         #It draws a blue rectangle with the parameters of foodx, food,y, snake_block and snake_block
-        pygame.draw.rect(dis, blue, [foodx, foody, snake_block, snake_block])
-        #It draws a black rectangle with the parameters of x1, y1, snake_block and snake_block
-        pygame.draw.rect(dis, black, [x1, y1, snake_block, snake_block])
+        pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
+        #Make a list for the snake head
+        snake_Head = []
+        snake_Head.append(x1)
+        snake_Head.append(y1)
+        snake_List.append(snake_Head)
+        if len(snake_List) > Length_of_snake:
+            del snake_List[0]
+        
+        #If list of the snake head is less than 1, then it is game over
+        for x in snake_List[:-1]:
+            if x == snake_Head:
+                game_close = True
+ 
+        our_snake(snake_block, snake_List)
+ 
+        #updates the display
         pygame.display.update()
  
         #When the snake is in the same x and y axis of the food, then it prints "Yummy!!!"
         if x1 == foodx and y1 == foody:
-            print("Yummy!!")
+           foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
+           foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
+           Length_of_snake += 1
+
         clock.tick(snake_speed)
  
  #Used to unitialize everything
     pygame.quit()
     quit()
  
- 
+#Starts the game again
 gameLoop()
 
 
