@@ -30,12 +30,12 @@ snake_block = 10
 snake_speed = 30
 
 #Establishes the font
-font_style = pygame.font.SysFont(None, 50)
+font_style = pygame.font.SysFont(None, 30)
 
 #It establishes the font of the message
 def message(msg,color):
     mesg = font_style.render(msg, True, color)
-    dis.blit(mesg, [dis_width/2, dis_height/2])
+    dis.blit(mesg, [dis_width/3, dis_height/3])
 
 #It makes it when game_over is false it prints out all the actions that take place on the screen. 
 def gameLoop():
