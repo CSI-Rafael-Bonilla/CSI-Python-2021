@@ -6,12 +6,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
 # Locate webdriver path. 
-myPath = Path(__file__).parents(0)
-driverPath = f"{myPath}/chromedriver.exe"
+myPath = Path(__file__).parents[0]
+driverPath = f"{myPath}/chromedriver"
 
 # Prevent window from opening. Background Task
 options = Options()
-options.headless = True
+# options.headless = True
 
 #Contruct webdriver (executable_path is now deprecated)
 driver = webdriver.Chrome(executable_path=driverPath, options = options)
@@ -20,12 +20,11 @@ driver = webdriver.Chrome(executable_path=driverPath, options = options)
 driver.get("https://www.google.com/")
 
 #Find and print price element value. 
-price = driver.find_element(By.CLASS_NAME, 'a-price-whole').text
-print(price)
-driver.close()
+# price = driver.find_element(By.CLASS_NAME, 'a-price-whole').text
+# print(price)
+# driver.close()
 
 
 # driver.maximize_window()
 # driver.find_element(By.NAME, 'q').send_keys('Baauer')
 # driver.find_element(By.NAME, 'q').send_keys(Keys.ENTER)
-
